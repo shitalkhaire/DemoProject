@@ -7,11 +7,11 @@ public class PassingOperatorAndArrayList {
 	public static void main(String[] args) {
 
 		ArrayList<Integer> prepareList = new ArrayList<Integer>();
-		prepareList.add(10);
-		prepareList.add(20);
-		prepareList.add(30);
-		prepareList.add(40);
-		char operator='+';
+		prepareList.add(1);
+		prepareList.add(2);
+		prepareList.add(3);
+		prepareList.add(4);
+		char[] operator= {'+','-','*'};
 		
 		PassingOperatorAndArrayList object =new PassingOperatorAndArrayList();
 		int result = object.OperationOnArrList(prepareList,operator);
@@ -20,29 +20,39 @@ public class PassingOperatorAndArrayList {
 		
 	}
 	
-	int OperationOnArrList(ArrayList<Integer> aList, char op)
+	int OperationOnArrList(ArrayList<Integer> aList, char[] op)
 	{
-		int add =0;
-		int sub =0;
-		int mul =0;
-		for(int i=0;i<aList.size();i++)
+		int add=0;
+		int sub=0;
+		int mul=0;
+		//int i = 0;
+		for(int j=0;j<aList.size();j++)
 		{ 
-			
-			if(op=='+')
+			int jval= aList.get(j);
+			for(char i=0;i<op.length;i++)
 			{
-				add = aList.get(i) + add;
+			if(op[i]=='+')
+			{
+				add = jval + add;
+				return add;
 			}
-			
-		/*		
-				if(op=='-')
-				{
-					sub = aList.get(i) - sub;	
-				}
+
+			if(op[i]=='-')
+			{
+				sub = jval - sub;	
 				return sub;
-			*/	
+			}
+				
+			if(op[i]== '*')
+			{
+				mul = jval * mul;
+				return mul;
+			}
+			}
 		}
-	//	return  null;
-		return add;
+		return  0;
+	//	return add;
+		
 		
 	}
 

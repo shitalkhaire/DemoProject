@@ -6,8 +6,8 @@ public class NumberOperations
 {
 
 	int num1;
-	int num2=2;
-	int num3=1;
+	int num2;
+	int num3;
 
 	public NumberOperations(int num1,int num2,int num3)
 	{
@@ -34,11 +34,5 @@ public class NumberOperations
 		return mul;
 	}
 	
-	int operation()
-	{
-		int add =num1+num2;
-		return add;
-		
-	}
 	
 }

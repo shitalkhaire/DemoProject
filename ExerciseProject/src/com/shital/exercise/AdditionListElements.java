@@ -14,7 +14,7 @@ public class AdditionListElements {
 		
 		AdditionListElements addObj =new AdditionListElements();
 		int sumList = addObj.calculateSum(firstList);
-	//	System.out.println("Sum of Elements is :="+sumList);
+		System.out.println("Sum of Elements is :="+sumList);
 		
 
 	}
@@ -22,12 +22,12 @@ public class AdditionListElements {
 	int calculateSum(ArrayList<Integer> calList) {
 		
 		int storeSum =0;
-		System.out.println("position \tSum");		
+	//	System.out.println("position \tSum");		
 		for(int i=0;i<calList.size();i++)
 		{
 		//	calList.add(i);
 		storeSum = calList.get(i) + storeSum;
-		System.out.println(" "+i+"\t\t"+storeSum);
+		//System.out.println(" "+i+"\t\t"+storeSum);
 		}
 		
 		return storeSum;
