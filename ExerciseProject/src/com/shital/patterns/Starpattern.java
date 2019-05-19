@@ -1,4 +1,4 @@
-package com.shital.m5;
+package com.shital.patterns;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.shital.m12;
+package com.shital.patterns;
 
 public class FirstStarpattern {
 
